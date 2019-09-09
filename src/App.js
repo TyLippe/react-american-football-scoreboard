@@ -38,12 +38,12 @@ function App() {
       </section>
       <section className="buttons">
         <div className="homeButtons">
-          <button className="homeButtons__touchdown" onClick={setHomeScore(home + 7)}>Home Touchdown</button>
-          <button className="homeButtons__fieldGoal" onClick={setHomeScore(home + 3)}>Home Field Goal</button>
+          <button className="homeButtons__touchdown" onClick={() => setHomeScore(home + 7)}>Home Touchdown</button>
+          <button className="homeButtons__fieldGoal" onClick={() => setHomeScore(home + 3)}>Home Field Goal</button>
         </div>
         <div className="awayButtons">
-          <button className="awayButtons__touchdown" onClick={setAwayScore(home + 7)}>Away Touchdown</button>
-          <button className="awayButtons__fieldGoal" onClick={setAwayScore(home + 3)}>Away Field Goal</button>
+          <button className="awayButtons__touchdown" onClick={() => setAwayScore(away + 7)}>Away Touchdown</button>
+          <button className="awayButtons__fieldGoal" onClick={() => setAwayScore(away + 3)}>Away Field Goal</button>
         </div>
       </section>
     </div>
